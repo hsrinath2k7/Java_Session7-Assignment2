@@ -1,0 +1,41 @@
+package Session7;
+
+import java.util.Scanner;
+
+public class NumberExcepHandl {
+	
+
+	public static void main(String[] args)
+	{
+		
+		Scanner read = new Scanner(System.in);
+		
+		System.out.print("Enter a String Value: ");
+		
+		String value = read.nextLine();
+		try{
+		
+		int n = Integer.parseInt(value);
+		
+		System.out.println("Entered Value: " + n);
+		
+		} catch (NumberFormatException e){
+			
+			System.out.println("Format Error");
+			
+		}
+		
+		System.out.println("The Main method ends");
+		
+		
+	}
+	
+
+}
+
+/* Output
+
+Enter a String Value: Welcome
+Format Error
+The Main method ends
+*/
